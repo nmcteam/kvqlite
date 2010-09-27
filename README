@@ -1,0 +1,16 @@
+h1. KVQLite Simple URL-key, Value JSON Store
+
+Dependencies: SQLite, PHP 5.2
+
+Command-line Usage:
+php index.php [method=post|get] [key=uri] [json value if post]
+
+CLI Usage:
+php index.php post /hello '"World"'
+php index.php get /hello
+> "World"
+
+HTTP Usage:
+curl -d '"World"' http://www.somesite.com/hello
+curl http://www.somesite.com/hello
+> "World"

@@ -29,7 +29,6 @@ switch ($method) {
         $result = $kvqlite->post($key,$value);
         break;
     default:
-        print_r($argv);
         die("$method not yet supported.");
 }
 
