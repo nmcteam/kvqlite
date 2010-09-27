@@ -17,7 +17,7 @@ if($argc > 0) {
     $regex = "!^$dir|$script!";
     $key = preg_replace($regex,'',$_SERVER['REQUEST_URI']); 
     $method = $_SERVER['REQUEST_METHOD'];
-    $value = file_get_contents('php://stdin');
+    $value = file_get_contents('php://input');
 }
 
 $kvqlite = new KVQLite(DATABASE);
